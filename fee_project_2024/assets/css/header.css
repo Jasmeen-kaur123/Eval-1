@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  background: #226260;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav ul li {
+  margin-right: 0;
+  position: relative;
+  display: flex;
+  padding: 0 25px;
+}
+
+.header-nav ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  text-decoration: none;
+  color: #fff;
+  gap: 5px;
+}
+
+.header-nav .nav-image {
+  width: 35px;
+}
+
