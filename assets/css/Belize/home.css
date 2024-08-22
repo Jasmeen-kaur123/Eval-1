@@ -1,0 +1,175 @@
+.sinup{
+  text-align: center;
+  padding-top: 80px;
+}
+.sinup .offers{
+  font-size: 40px;
+  font-style: italic;
+  color:#ad0662;
+  padding-bottom: 40px;
+}
+
+.sinup .up-to-date{
+  font-size:30px;
+  color:gray;
+  font-style: italic;
+}
+
+.sinup .input-text input{
+  width:200px;
+  height:30px;
+}
+
+.sinup .input-text{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sinup .input-text .code{
+  padding-left: 60px;
+  font-size:20px ;  
+}
+
+.sinup-button{
+  padding-bottom: 40px;
+}
+.sinup-button .button{
+   padding: 10px;
+   color:white;  
+   background-color:#226260;
+   font-size: xx-large;
+}
+
+.Availability .Amentities{
+  background-color: #226260c8;
+  width:600px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 85px;
+}
+
+.Availability .Amentities h1{
+  padding-left: 30px;
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+}
+
+.Availability .Amentities ul li{
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+  padding-bottom:24px;
+}
+
+.booking{
+   width: 500px;
+   padding-left:500px;
+   padding-top: 50px;
+}
+
+
+.booking .book-direct{
+  background-color: #226260;
+  font-size: 20px;
+  color: white;
+}
+
+.booking .book-direct .book{
+  padding-left: 150px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.booking .book-direct ul {
+  padding-left:180px ;
+}
+
+.booking .book-direct .price{
+  padding-left: 160px;
+  font-size: 30px;
+}
+
+.booking .available{
+  background-color:grey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.booking  .prices{
+  background-color: rgba(128, 128, 128, 0.349);
+}
+
+.booking .prices .price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.booking .information{
+  padding:20px;  
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  
+}
+
+.booking .information .adults{
+   font-size:25px;  
+   padding-right:20px;   
+   padding-top: 5px;
+}
+
+.booking .information .kids{
+  font-size:25px;
+  padding-right:20px;
+  padding-top: 5px;
+}
+
+.booking .information .selection-adults{  
+  font-size:25px;
+  border: none;
+  background-color: grey;
+}
+
+.booking .information .selection-kids{  
+  font-size:25px;
+  border: none;
+  background-color: grey;  
+}
+
+.booking .book-now{
+  background-color: #22626063;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.booking .book-now .button{
+  padding: 10px;
+   color:white;  
+   background-color:#226260;
+   font-size: xx-large;
+   border-radius: 10px;
+  
+}
+
+.booking .input .input-text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: grey;
+}
+
+.booking .input .input-text .code{
+  padding:15px;
+  background-color: grey;
+}
+
+.booking .input .input-text .promotion{
+  font-size: 22px;
+  padding-left: 20px;
+}
