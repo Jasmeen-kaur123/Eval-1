@@ -1,0 +1,192 @@
+.room-view{
+  display: flex;    
+}
+
+.amenities .popular{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #ad0662;
+  font-style: italic;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.amenities .facilities{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.amenities .facilities .wifi{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.amenities .facilities .wifi .images{
+  border:2px solid grey;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px grey;
+  
+}
+
+.amenities .facilities .wifi .names{
+  padding-top:20px;
+  font-size: 20px;
+ 
+}
+
+.booking-container .booking-content .booking-choice{
+  display: flex;
+  flex-direction:row;
+}
+
+.booking-container .booking-content .booking-choice .all-content .items{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.booking-container .booking-content .booking-choice .heading1{
+  padding-left: 40px;
+  font-size: 21px;
+  color:#226260;
+}
+
+.booking-container .booking-content .booking-choice .all-content .items p{
+  padding-left: 20px;
+  font-size: large;
+}
+
+.booking-container .booking-content .booking-choice .all-content{
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-container .booking-content .booking-choice .all-content .items-2row{
+  padding-left: 90px;
+}
+
+.booking-container .booking-content .booking-choice .all-content .items .items-image{
+  padding-top: 13px;
+}
+
+.booking-container .booking-content .booking-choice .item-price{
+  display: flex;
+  flex-direction: column;
+  padding-left:350px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.booking-container .booking-content .booking-choice .item-price .dollar{
+  font-size: 40px;
+  font-weight: bold;
+  color:#ad0662;
+}
+
+.booking-container .booking-content .booking-choice .item-price .average{
+  font-size: 20px;
+}
+
+.booking-container{
+  border: 3px solid grey;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+
+.booking-container .booking-content .booking-choice .room-image{
+  padding-left: 5px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.booking-container .booking-content .booking-choice .item-price-1{
+  display: flex;
+  flex-direction: column;
+  padding-left:325px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.booking-container .booking-content .booking-choice .item-price-1 .average{
+  font-size: 20px;
+}
+
+.booking-container .booking-content .booking-choice .item-price-1 .dollar{
+  font-size: 40px;
+  font-weight: bold;
+  color:#ad0662;
+}
+
+.sinup{
+  text-align: center;
+  padding-top: 80px;
+}
+.sinup .offers{
+  font-size: 40px;
+  font-style: italic;
+  color:#ad0662;
+  padding-bottom: 40px;
+}
+
+.sinup .up-to-date{
+  font-size:30px;
+  color:gray;
+  font-style: italic;
+}
+
+.sinup .input-text input{
+  width:200px;
+  height:30px;
+}
+
+.sinup .input-text{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sinup .input-text .code{
+  padding-left: 60px;
+  font-size:20px ;  
+}
+
+.sinup-button{
+  padding-bottom: 40px;
+}
+.sinup-button .button{
+   padding: 10px;
+   color:white;  
+   background-color:#226260;
+   font-size: xx-large;
+}
+
+.booking-container .booking-content .booking-choice .item-price .button{
+  padding: 7px;
+  color:white;  
+  background-color:#226260;
+  border-radius: 10px;
+  font-size:large;
+}
+
+.booking-container .booking-content .booking-choice .item-price .book-now{
+  padding-top: 10px;
+}
+
+.booking-container .booking-content .booking-choice .item-price-1 .button{
+  padding: 7px;
+  color:white;  
+  background-color:#226260;
+  border-radius: 10px;
+  font-size:large;
+}
+
+.booking-container .booking-content .booking-choice .item-price-1 .book-now{
+  padding-top: 10px;
+}
