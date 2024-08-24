@@ -1,0 +1,51 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.signup .offers {
+  font-size: 40px;
+  font-style: italic;
+  color:#ad0662;
+  padding-bottom: 10px;
+}
+
+.signup .up-to-date {
+  font-size: 30px;
+  color:gray;
+  font-style: italic;
+}
+
+.signup-form-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.signup .input-text input{
+  width: 200px;
+  height: 30px;
+}
+
+.signup .input-text{
+  padding: 20px 0;
+}
+
+.signup .input-text .code{
+  padding-left: 60px;
+  font-size: 20px ;  
+}
+
+.signup-button {
+  margin-top: 20px;
+}
+
+.signup-button .button {
+  padding: 10px;
+  color:white;  
+  background-color:#226260;
+  font-size: xx-large;
+}

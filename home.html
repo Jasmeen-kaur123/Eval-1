@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
   </head>
   <body>
     <!-- Header section -->
@@ -34,58 +35,81 @@
       </nav>
     </header>
     <!-- Header section -->
+
     <!-- Body section -->
     <section class="banner-section">
+    </section>
+    
+    <section class="booking-wrapper">
       <div class="booking-section">
-        <div class="check-in">
-          <p>Check-in</p>
+        <div class="check-in book-blocks">
+          <p><b>Check-in</b></p>
           <form>
             <input type="date" id="check-in" name="check-in">
           </form>
         </div>
-        <div class="check-out">
-          <p>Check-out</p>
+        <div class="check-out book-blocks">
+          <p><b>Check-out</b></p>
           <form>
             <input type="date" id="check-out" name="check-out">
           </form>
         </div>
-        <form class="information">
-          <label for="Adults" class="adults">Adults</label>
-          <select id="Adults" name="Adults" class="selection-adults">
-            <option value="Adults-1">1</option>
-            <option value="Adults-2" selected>2</option>
-            <option value="Adults-3">3</option>
-            <option value="Adults-4"> 4</option>
-            <option value="Adults-5">5</option>
-            <option value="Adults-6">6</option>
-          </select>
-          <br>
-          <label for="Kids" class="kids">Kids</label>
-          <select id="Kids" name="Kids" class="selection-kids">
-            <option value="Kids-0" selected>0</option>
-            <option value="Kids-1">1</option>
-            <option value="Kids-2">2</option>
-            <option value="Kids-3">3</option>
-            <option value="Kids-4">4</option>
-          </select>
-        </form>
-        <div class="book-now">
+        <div class="form-section book-blocks">
+          <form class="information">
+            <div class="selects">
+              <label for="Adults" class="adults">Adults</label>
+              <select id="Adults" name="Adults" class="selection-adults">
+                <option value="Adults-1">1</option>
+                <option value="Adults-2" selected>2</option>
+                <option value="Adults-3">3</option>
+                <option value="Adults-4"> 4</option>
+                <option value="Adults-5">5</option>
+                <option value="Adults-6">6</option>
+              </select>
+            </div>
+
+            <div class="selects">
+              <label for="Kids" class="kids">Kids</label>
+              <select id="Kids" name="Kids" class="selection-kids">
+                <option value="Kids-0" selected>0</option>
+                <option value="Kids-1">1</option>
+                <option value="Kids-2">2</option>
+                <option value="Kids-3">3</option>
+                <option value="Kids-4">4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="book-now book-blocks">
           <p>Book Direct and Save</p>
           <p class="dollar">&dollar;106.22</p>
           <button type="submit">BOOK NOW</button>
         </div>
-        <div class="booking-site">
-          <div class="airbnb">
-            <img src="./assets/images/home/airbnb.png" width="90">
+        <div class="booking-site book-blocks">
+          <div class="ota">
+            <div class="image-part">
+              <img src="./assets/images/home/airbnb.png" width="90">
+            </div>
+
+            <div class="price-part">
+              <span>$110.50</span>
+            </div>
           </div>
-          <div class="booking">
-            <img src="./assets/images/home/booking.png" width="90">
+          <div class="ota">
+            <div class="image-part">
+              <img src="./assets/images/home/booking.png" width="90">
+            </div>
+            <div class="price-part">
+              <span>$115.50</span>
+            </div>
           </div>
-          <div class="expedia">
-            <img src="./assets/images/home/expedia.png" width="90">
-          </div>
-          <div class="agoda">
-            <img src="./assets/images/home/agoda.png" width="50">
+          <div class="ota">
+            <div class="image-part">
+              <img src="./assets/images/home/expedia.png" width="90">
+            </div>
+            <div class="price-part">
+              <span>$120.50</span>
+            </div>
           </div>
         </div>
       </div>
@@ -120,16 +144,16 @@
       </div>
     </section>
     <section class="explore">
-      <div class="shooping">
-        <div class="shooping-info">
+      <div class="shoping">
+        <div class="shoping-info">
           <p>Ft. Lauderdale Beach </p>
-          <button type="submit" class="shooping-button">20 Min Walk</button>
+          <button type="submit" class="shoping-button">20 Min Walk</button>
         </div>
       </div>
       <div class="dining">
-        <div class="shooping-info">
+        <div class="shoping-info">
           <p>Las Olas Boulevard </p>
-          <button type="submit" class="shooping-button">20 Min Walk</button>
+          <button type="submit" class="shoping-button">20 Min Walk</button>
         </div>
       </div>
     </section>
@@ -205,7 +229,7 @@
             allow="autoplay; encrypted-media" 
             allowfullscreen 
             frameborder="0" 
-            height="900px" 
+            height="800px" 
             title="villa venezia" 
             width="100%" 
             src="https://www.youtube.com/embed/mzFJgtag1_o?controls=0&enablejsapi=1&loop=1&modestbranding=0&showinfo=0&fs=0&mute=1&autoplay=1">
@@ -214,14 +238,14 @@
     
     </section>
 
-    <section class="sinup">
+    <section class="signup">
         <div class="offers">Sign up for special offers</div>
         <div class="up-to-date">Stay up-to-date on the latest at our hotel</div>
        <form class="input-text">
         <input type="email" id="email" name="email" placeholder="Email-address*" class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="text" id="portal-code" name="portal-code" placeholder="Zip/Portal-code" class="code">        
        </form>
-       <div class="sinup-button">
+       <div class="signup-button">
         <form>
           <button type="button" class="button">Submit</button>
         </form>

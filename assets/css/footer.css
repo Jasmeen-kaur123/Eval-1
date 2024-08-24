@@ -6,6 +6,7 @@ footer.site-footer {
   color: #fff;
   flex-direction: column;
   gap: 50px;
+  margin-top: 20px;
 }
 
 .footer-wrapper{
@@ -102,6 +103,7 @@ footer.site-footer img {
 .form-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .newsletter-input-btn {

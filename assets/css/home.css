@@ -6,67 +6,63 @@
   justify-content: center;
 }
 
+section.booking-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
 .booking-section {
   display: flex;
-  bottom: -100px;  
   justify-content: center;
-  position: absolute;
   text-align: center;
   align-items: center;
   background-color: white;
-  left: 20%;
+  margin-top: -75px;
+	z-index: 1;
   border: 2px solid red;
   border-radius: 10px;
 }
 
-.booking-section .check-in{
-  padding: 20px; 
+.book-blocks {
+  border-right: 1px solid #dfdfdf;
+	display: inline-flex;
+	padding: 20px;
+	flex-direction: column;
+	min-height: 103px;
 }
 
-.booking-section .check-in  p{
-  font-size: 30px;
+.book-blocks .selects {
+	font-size: 17px;
 }
 
-.booking-section .check-out{
-  padding: 20px;      
-}
-
-.booking-section .check-out  p{
-  font-size: 30px;
-}
-
-.booking-section .information{
-  padding:20px;  
-}
-
-.booking-section .information .adults{
-   font-size:25px;  
-   padding-right:20px;   
-}
-
-.booking-section .information .kids{
-  font-size:25px;
-  padding-right:20px;
+.book-blocks .information {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .booking-section .information .selection-adults{  
-  font-size:25px;
   border: none;
+	padding: 0 5px;
 }
 
 .booking-section .information .selection-kids{  
-  font-size:25px;
   border: none;
-  padding:10px;
+	padding: 0 5px;
+	margin-left: 14px;
 }
 
-.booking-section .book-now{
-  padding:30px;
+.book-now.book-blocks {
+	display: flex;
+	gap: 10px;
 }
 
 .booking-section .book-now p{
-    font-size:20px;
-    font-weight: bold;
+	font-size:20px;
+	font-weight: bold;
+	margin: 0;
 }
 
 .booking-section .book-now .dollar{
@@ -82,12 +78,30 @@
   color: white;
 }
 
-.booking-section .booking-site{
-  padding:30px;
+.booking-site.book-blocks {
+	width: 195px;
+	padding: 0;
+	gap: 15px;
+	margin: 0;
 }
 
-.booking-section .booking-site .airbnb,.booking , .expedia,.agoda{
-  padding-top: 20px;
+.booking-section .ota {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #dedede;
+	align-items: center;
+	box-sizing: border-box;
+	width: 195px;
+	padding: 0 5px 5px;
+}
+
+.booking-section .ota:last-child {
+	border: none;
+}
+
+.price-part {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .home-content-section {
@@ -95,7 +109,7 @@
   flex-direction: column;
   padding: 20px 50px;
   gap: 20px;
-  margin-top: 130px;
+  margin-top: 20px;
 }
 
 .home-content-section .content-logo {
@@ -131,13 +145,21 @@ section.home-content-section {
   gap: 20px;
 }
 
-.feature-location .feature-title{
+.feature-location {
+	margin-top: 20px;
+}
+
+.feature-location .feature-title {
   display: flex;
   justify-content: center;
   font-size: 50px;
   font-style: italic;
   color: #ad0662;
   font-weight: bold;
+}
+
+.feature-location .feature-title p {
+	margin: 0;
 }
 
 .feature-location .location-pics{
@@ -164,16 +186,14 @@ section.home-content-section {
   color: grey;
   text-align: center;
 }
-.explore{
-  padding-left: 150px;
-  padding-top:100px;
-  padding-bottom: 100px;
-  padding-right: 150px;
+
+.explore {
+  padding: 30px 150px 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.shooping{
+.shoping {
   background-image: url("../images/home/shopping.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -197,7 +217,7 @@ section.home-content-section {
   border-radius: 15px;
 }
 
-.explore .shooping .shooping-info,.dining-info{
+.explore .shoping .shoping-info, .dining-info {
   background-color: rgba(0, 0, 0, 0.56);
   width:400px;
   height:300px;
@@ -205,7 +225,7 @@ section.home-content-section {
   border-radius: 10px;
  
 }  
-.explore .dining .shooping-info,.dining-info{
+.explore .dining .shoping-info,.dining-info {
   background-color: rgba(0, 0, 0, 0.56);
   width:400px;
   height:300px;
@@ -214,20 +234,20 @@ section.home-content-section {
  
 } 
 
-.explore .shooping .shooping-info p{
+.explore .shoping .shoping-info p{
   font-size:50px;
   padding-left: 30px;
   padding-top: 40px;
   color: white;
 }
-.explore .dining .shooping-info p{
+.explore .dining .shoping-info p{
   font-size:50px;
   padding-left: 30px;
   padding-top: 40px;
   color: white;
 }
 
-.explore .shooping .shooping-info .shooping-button{
+.explore .shoping .shoping-info .shoping-button{
   font-size: larger;
   background-color: #ad0662;
   color: white;
@@ -235,7 +255,7 @@ section.home-content-section {
   border-radius: 15px;
 }
 
-.explore .dining .shooping-info .shooping-button{
+.explore .dining .shoping-info .shoping-button{
   font-size: larger;
   background-color: #ad0662;
   color: white;
@@ -253,19 +273,17 @@ section.home-content-section {
  padding-right: 80px;
 }
 
-.us-content .content1 h1{
+.us-content .content1 h1 {
   color: #ad0662;
   font-style: italic;
   font-size: 70px;
-  padding-right: 80px;
-  padding-bottom: 60px;
- }
- 
+	margin-top: 0;
+} 
 
 .us-content .content1 .about{
   display: flex;
   flex-direction: row;
-  padding-bottom:90px;
+  padding-bottom: 60px;
 }
 
 .us-content .content1 .about img {
@@ -368,45 +386,4 @@ section.home-content-section {
   display: flex;
   position: relative;
   bottom: 110px;
-}
-
-.sinup{
-  text-align: center;
-}
-.sinup .offers{
-  font-size: 40px;
-  font-style: italic;
-  color:#ad0662;
-  padding-bottom: 40px;
-}
-
-.sinup .up-to-date{
-  font-size:30px;
-  color:gray;
-  font-style: italic;
-}
-
-.sinup .input-text input{
-  width:200px;
-  height:30px;
-}
-
-.sinup .input-text{
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.sinup .input-text .code{
-  padding-left: 60px;
-  font-size:20px ;  
-}
-
-.sinup-button{
-  padding-bottom: 40px;
-}
-.sinup-button .button{
-   padding: 10px;
-   color:white;  
-   background-color:#226260;
-   font-size: xx-large;
 }
