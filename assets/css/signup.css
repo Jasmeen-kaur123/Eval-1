@@ -25,7 +25,7 @@
   gap: 20px;
 }
 
-.signup .input-text input{
+.signup .input-text input {
   width: 200px;
   height: 30px;
 }
@@ -34,9 +34,10 @@
   padding: 20px 0;
 }
 
-.signup .input-text .code{
+.signup .input-text .code {
   padding-left: 60px;
-  font-size: 20px ;  
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 .signup-button {
@@ -48,4 +49,45 @@
   color:white;  
   background-color:#226260;
   font-size: xx-large;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .signup {
+    margin-top: 10px;
+  }
+
+  .signup .offers {
+    font-size: 30px;
+  }
+
+  .signup .up-to-date {
+    font-size: 20px;
+  }
+
+  .signup .input-text {
+    padding: 15px 0;
+  }
+
+  .signup-form-inputs {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .signup .input-text input {
+    width: 100%;
+  }
+
+  .signup .input-text .code {
+    padding-left: 5px;
+  }
+
+  .signup-button {
+    margin-top: 15px;
+  }
+  
+  .signup-button .button {
+    font-size: 18px;
+  }
 }

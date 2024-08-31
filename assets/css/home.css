@@ -78,6 +78,10 @@ section.booking-wrapper {
   color: white;
 }
 
+.booking-section .book-now button:hover{
+    transform: scale(1.1);
+}
+
 .booking-site.book-blocks {
 	width: 195px;
 	padding: 0;
@@ -173,18 +177,43 @@ section.home-content-section {
   border-radius: 10px;
 }
 
+.feature-location .location-pics .room1 img:hover {
+  transform: scale(1.1); 
+}
+
+.feature-location .location-pics .room1 p:hover{
+  color:black;
+}
+
+
 .feature-location .location-pics .room2 img{
   border-radius: 10px;
+}
+
+.feature-location .location-pics .room2 img:hover{
+  transform: scale(1.1);
+}
+
+.feature-location .location-pics .room2 p:hover{
+  color:black;
 }
 
 .feature-location .location-pics .room3 img{
   border-radius: 10px;
 }
 
+.feature-location .location-pics .room3 img:hover{
+  transform: scale(1.1);
+}
+
 .feature-location .location-pics .room1,.room2,.room3 p{
   font-size: 20px;
   color: grey;
   text-align: center;
+}
+
+.feature-location .location-pics .room3 p:hover{
+  color:black;
 }
 
 .explore {
@@ -255,6 +284,11 @@ section.home-content-section {
   border-radius: 15px;
 }
 
+.explore .shoping .shoping-info .shoping-button:hover{
+  transform: scale(1.1);
+  color:black;
+}
+
 .explore .dining .shoping-info .shoping-button{
   font-size: larger;
   background-color: #ad0662;
@@ -263,10 +297,16 @@ section.home-content-section {
   border-radius: 15px;
 }
 
+.explore .dining .shoping-info .shoping-button:hover{
+  transform: scale(1.1);
+  color:black;
+}
+
 .us-content{
   display: flex;
   flex-direction: row;
   padding-left: 100px;
+
 }
 
 .us-content .content1 {
@@ -279,6 +319,10 @@ section.home-content-section {
   font-size: 70px;
 	margin-top: 0;
 } 
+
+.us-content .content1 h1:hover{
+  color: #226260;
+}
 
 .us-content .content1 .about{
   display: flex;
@@ -296,7 +340,6 @@ section.home-content-section {
   padding-left: 40px;
   font-size: 20px;  
 }
-
 
 .us-content .content1 .about .about-title .heading{
  font-size: xx-large;
@@ -387,3 +430,176 @@ section.home-content-section {
   position: relative;
   bottom: 110px;
 }
+
+@media  (max-width: 768px) {
+  .banner-section{
+    height: 454px;
+    max-width: 100%;
+  }
+   
+  .booking-wrapper{
+    padding-top: 80px;   
+  }
+
+  .booking-section{
+    flex-direction: column;
+    width: 334px;
+  }
+  
+  .check-in.book-blocks{
+    font-size: 24px;
+    border: none;       
+  }
+
+  .check-out.book-blocks{
+    font-size: 24px;
+    border: none; 
+  }
+
+  .form-section.book-blocks{
+    font-size: 24px;
+    border: none; 
+    padding-top: 15px;
+  }
+
+  .book-now.book-blocks{
+    border: none;
+  }
+
+  .booking-site.book-blocks{
+    border:none;
+    padding-top: 15px;
+  }
+
+  .home-content-section{
+    max-width: 100%;
+  }
+
+  .feature-location{
+    flex-direction: column;
+  }
+  
+  .feature-location .location-pics{
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .feature-location .location-pics .room1 img{
+    max-width: 100%;
+  }
+
+  .feature-location .location-pics .room1 p{
+    font-size: 19px;
+  }
+  
+  .feature-location .location-pics .room2 img{
+    max-width: 100%;
+  }
+
+  .feature-location .location-pics .room2 p{
+    font-size: 18px;
+  }
+
+  .feature-location .location-pics .room3 img{
+    max-width: 100%;
+  }
+
+  .feature-location .location-pics .room3 p{
+    font-size: 16px;
+  }
+
+  .explore{
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+
+  }
+
+  .explore .shoping{
+    max-width:233px;
+  }
+
+  .explore .shoping .shoping-info{
+    max-width: 100%;
+    font-size: 12px;
+  }
+  
+  .explore .shoping .shoping-info, .dining-info {
+    width: 177px;
+    height: 235px;
+    padding: 5px;
+    padding-right: 22px;
+  } 
+
+  .explore .shoping .shoping-info p{
+    font-size: 24px;
+  }
+
+  .explore .shoping .shoping-info .shoping-button{
+    font-size:12px;
+  }
+
+  .explore .dining{
+    max-width: 233px;
+    padding-top: 77px;
+     padding-bottom: 1px;
+  }
+
+  .explore .dining .dining-info{
+    max-width: 100%;
+    font-size: 12px;
+  }
+  
+  .explore .dining .shoping-info, .dining-info {
+    width: 177px;
+    height: 235px;
+    padding: 5px;
+    padding-right: 22px;
+  } 
+
+  .explore .dining .shoping-info p{
+    font-size: 24px;
+  }
+
+  .explore .dining .shoping-info .shoping-button{
+    font-size:12px;
+  }
+
+  .us-content{
+    padding-left: 32px;
+    flex-direction: column;
+  }
+
+  .us-content  .content1 h1{
+    font-size: 27px;
+  }
+
+  .us-content .content1 .about img {
+     width:31px;
+  }
+
+  .us-content .content1 .about .about-title .heading {
+    font-size: 23px;
+  }
+
+  .us-content .content1 .about .about-title{
+    font-size: 14px;
+  }
+
+  .us-content .view{
+    z-index: 0;
+    max-width: 100%;
+  }
+
+  .us-content .view img{
+    max-width: 100%;
+    height: 175px;
+  }
+
+  .beach .hotel-view{
+    height: 247px;
+  }
+  
+}
+
+

@@ -14,7 +14,9 @@
     <header class="site-header">
       <div class="logo">
         <a href="home.html">
-          <img src="./assets/images/header/logo.png" alt="logo">
+          <img class="desktop-logo" src="./assets/images/header/logo.png" alt="logo">
+
+          <img class="mobile-logo" src="./assets/images/header/logo-mobile.png" alt="logo" >
         </a>        
       </div>
       <nav class="header-nav">
@@ -32,6 +34,11 @@
           <li>
             <a href="location.html">
               <img class="nav-image" src="./assets/images/header/location.svg" alt="location"> Location 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="nav-image" src="./assets/images/header/Profile.png" alt="Sign in"> Sign in
             </a>
           </li>
         </ul>
@@ -117,6 +124,7 @@
         </div>
       </div>
     </section>
+
     <section class="home-content-section">
       <div class="content-logo">
         <img src="./assets/images/home/banner-logo.png">
@@ -126,26 +134,31 @@
       </div>
       <div class="content-description"> Enjoy the peace and serenity of our individually decorated apartments and immerse yourself in the serene and cozy atmosphere of our pool area, gardens and terraces. As you enter through the fountain-graced arbor into the secluded retreat at Villa Venezia, a feeling of calm and serenity and a sense of “no worries” will embrace you. </div>
     </section>
+
     <section class="feature-location">
       <div class="feature-title">
         <p>Our Suites</p>
       </div>
-      <div class="location-pics">
-        <div class="room1">
-          <img src="./assets/images/home/room1.jpg" width="450">
-          <p>French Country -1 Bedroom (V V 7)</p>
+      <a href="suites.html">
+        <div class="location-pics">
+          <div class="room1">
+            <img src="./assets/images/home/room1.jpg" width="450">
+            <p>French Country -1 Bedroom (V V 7)</p>
+          </div>
+          <div class="room2">
+            <img src="./assets/images/home/room2.jpg" width="450">
+            <p>French Country-Hotel Room (V V A)</p>
+          </div>
+          <div class="room3">
+            <img src="./assets/images/home/room3.jpg" width="450" height="220">
+            <p>French Country 2 Bedroom (V V 7+ 7 A)</p>
+          </div>
         </div>
-        <div class="room2">
-          <img src="./assets/images/home/room2.jpg" width="450">
-          <p>French Country-Hotel Room (V V A)</p>
         </div>
-        <div class="room3">
-          <img src="./assets/images/home/room3.jpg" width="450" height="220">
-          <p>French Country 2 Bedroom (V V 7+ 7 A)</p>
-        </div>
-      </div>
-      </div>
+      </a>
+     
     </section>
+    
     <section class="explore">
       <div class="shoping">
         <div class="shoping-info">
@@ -277,7 +290,7 @@
               </div>
             </div>
             <div class="footer-content-main">
-              <img src="./assets/images/footer/loc-footer.svg" alt="" style="width:35px">
+              <img src="./assets/images/footer/loc-footer.svg" alt="" class="address-icon" style="width:35px">
               <div class="sub-content">
                 <span>Address </span>
                 <span>132 Isle of Venice, Fort Lauderdale, FL</span>
@@ -292,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section trips-login">
           <h2>MyTrips</h2>
           <div class="trips-content">
             <img src="./assets/images/footer/login.svg" alt="">
@@ -303,7 +316,7 @@
             <span> Change / Cancel Reservation</span>
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section policies-section">
           <h2>Our Policies</h2>
           <span>Hotel - Customer Policies</span>
           <span>Site Use Poicies</span>

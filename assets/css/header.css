@@ -10,6 +10,10 @@ body {
   padding: 10px;
 }
 
+.site-header .mobile-logo {
+  display: none;
+}
+
 .header-nav {
   margin-left: auto;
 }
@@ -41,3 +45,33 @@ body {
   width: 35px;
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    padding: 10px;
+  }
+
+  .site-header .desktop-logo {
+    display: none;
+  }
+
+  .site-header .mobile-logo {
+    display: block;
+    width: 70px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .header-nav .nav-image {
+    width: 20px;
+  }
+
+  .header-nav ul li {
+    padding: 0 10px;
+  }
+
+  .header-nav ul a {
+    font-size: 11px;
+  }
+}

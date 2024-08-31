@@ -38,6 +38,10 @@ section.amenities {
   align-items: center;
 }
 
+.amenities .facilities .amenity-type .images:hover{
+  transform: scale(1.1);
+}
+
 .amenities .facilities .amenity-type .images{
   border:2px solid grey;
   padding:20px;
@@ -48,6 +52,10 @@ section.amenities {
 .amenities .facilities .amenity-type .names {
   font-size: 20px; 
 }
+
+.amenities .facilities .amenity-type .names:hover{
+  transform: scale(1.1);
+} 
 
 .booking-wrapper {
   display: flex;
@@ -73,6 +81,10 @@ section.amenities {
   border: 1px solid #dedede;
   overflow: hidden;
   width: 350px;
+}
+
+.booking-container .room-image:hover{
+  transform: scale(1.1);
 }
 
 .booking-container .room-info {
@@ -138,4 +150,89 @@ section.amenities {
   background-color:#226260;
   border-radius: 10px;
   font-size: large;
+}
+
+.booking-container .booking-choice .item-price .button:hover{
+  transform: scale(1.1);  
+}
+
+@media (max-width: 768px) {
+  .outer-wrapper {
+    padding: 10px;
+  }
+
+  .room-view .room1 {
+    width: 100%;
+  }
+
+  .room-view .room1 img {
+    width: 100%;
+    height: 360px;
+  }
+
+  .room-view .room-2-3,
+  .room-view .room-4 {
+    display: none;
+  }
+
+  section.amenities {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .amenities .popular {
+    font-size: 30px;
+  }
+
+  .amenities .facilities {
+    margin-bottom: 10px;
+    width: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .amenities .facilities .amenity-type .images {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .amenities .facilities .amenity-type {
+    gap: 10px;
+  }
+
+  .amenities .facilities .amenity-type .names {
+    font-size: 15px;
+  }
+
+  .booking-container {
+    box-shadow: unset;
+  }
+
+  .booking-container .booking-choice {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .booking-container .room-image {
+    width: 320px;
+  }
+
+  .booking-container .room-image img {
+    width: 100%;
+  }
+
+  .booking-container .room-info {
+    padding: 0 5px;
+  }
+
+  .booking-container .booking-choice .item-price {
+    margin-left: unset;
+    text-align: center;
+  }
+
+  .booking-container .booking-choice .all-content {
+    gap: 10px;
+  }
 }
