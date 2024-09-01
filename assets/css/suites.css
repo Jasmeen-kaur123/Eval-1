@@ -2,6 +2,10 @@
   display: flex;    
 }
 
+.room-view .room-2-3 img {
+  width: 100%;
+}
+
 .outer-wrapper {
   max-width: 1300px;
   margin: 0 auto;
@@ -216,7 +220,7 @@ section.amenities {
   }
 
   .booking-container .room-image {
-    width: 320px;
+    width: calc(100% - 20px);
   }
 
   .booking-container .room-image img {

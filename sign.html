@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/location.css">
+  <link rel="stylesheet" href="./assets/css/sign.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="home.html">
+          <img class="desktop-logo" src="./assets/images/header/logo.png" alt="logo">
+
+          <img class="mobile-logo" src="./assets/images/header/logo-mobile.png" alt="logo" >
+        </a>        
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="suites.html">
+              <img class="nav-image" src="./assets/images/header/suites.svg" alt="suites"> Suites 
+            </a>
+          </li>
+          <li>
+            <a href="accolades.html">
+              <img class="nav-image" src="./assets/images/header/accolades.svg" alt="accolades"> Accolades 
+            </a>
+          </li>
+          <li>
+            <a href="location.html">
+              <img class="nav-image" src="./assets/images/header/location.svg" alt="location"> Location 
+            </a>
+          </li>
+          <li>
+            <a href="sign.html">
+              <img class="nav-image" src="./assets/images/header/Profile.png" alt="Sign in"> Sign in
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header section -->
+    <!-- Body section -->
+
+    <div class="login-container">
+      <div class="login-panel">
+          <div class="login-header">
+              <h3>Sign in</h3>
+              <p>For security, please sign in to access your information</p>
+          </div>
+          <div class="login-tabs">
+              <button class="tab active" id="email-tab">Email</button>
+              <button class="tab" id="mobile-tab">Mobile</button>
+          </div>
+          <form class="login-form" id="email-login-form">
+              <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+              </div>
+              <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password">
+                  
+              </div>
+              <button type="submit" class="btn-submit">Sign in</button>
+              <div class="login-footer">
+                  <a href="#" class="link">Create account</a>
+                  <a href="#" class="link">Forgot password?</a>
+              </div>
+              <div class="terms-policy ">
+                <label for="terms-condition">By signing in, I agree to Villa Venezia of Use and Privacy Policy.</label>
+                
+              </div>
+          </form>
+      </div>
+  </div>
+  
+    <!-- body section -->
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-wrapper">
+        <div class="content-section">
+          <h2>Contact</h2>
+          <div class="contact-content">
+            <div class="footer-content-main">
+              <img src="./assets/images/footer/iconF1.png" alt="">
+              <div class="sub-content">
+                <span>Email </span>
+                <span>info@villa-venezia.com</span>
+              </div>
+            </div>
+            <div class="footer-content-main">
+              <img src="./assets/images/footer/iconF2.png" alt="">
+              <div class="sub-content">
+                <span>Phone Number </span>
+                <span>(954) 832-0981</span>
+              </div>
+            </div>
+            <div class="footer-content-main">
+              <img src="./assets/images/footer/loc-footer.svg" alt="" class="address-icon" style="width:35px">
+              <div class="sub-content">
+                <span>Address </span>
+                <span>132 Isle of Venice, Fort Lauderdale, FL</span>
+              </div>
+            </div>
+            <div class="footer-content-main">
+              <img src="./assets/images/footer/iconF3.png" alt="">
+              <div class="sub-content">
+                <span>Business Hours </span>
+                <span>09:00 am to 05:00 pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section trips-login">
+          <h2>MyTrips</h2>
+          <div class="trips-content">
+            <img src="./assets/images/footer/login.svg" alt="">
+            <span>Login </span>
+          </div>
+          <div class="trips-content">
+            <img src="./assets/images/footer/edit.svg" alt="">
+            <span> Change / Cancel Reservation</span>
+          </div>
+        </div>
+        <div class="content-section policies-section">
+          <h2>Our Policies</h2>
+          <span>Hotel - Customer Policies</span>
+          <span>Site Use Poicies</span>
+          <span>Privacy and cookies</span>
+          <span>Terms and Conditions</span>
+          <span>Web Accessibility Statement</span>
+        </div>
+        <div class="content-section social-section">
+          <h2>Socials</h2>
+          <div class="social-content">
+            <img src="./assets/images/footer/google_white.png" alt="">
+            <span>Google Reviews </span>
+          </div>
+          <div class="social-content">
+            <img src="./assets/images/footer/twiiter-footer.png" alt="">
+            <span>Twitter</span>
+          </div>
+          <div class="social-content">
+            <img src="./assets/images/footer/insta.png" alt="">
+            <span>Instagram </span>
+          </div>
+          <div class="social-content">
+            <img src="./assets/images/footer/fb.png" alt="">
+            <span>Facebook</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-content">
+        <div class="newsletter-block">
+          <div class="form-section">
+            <form name="subscribeForm" class="subscribe-form" novalidate>
+              <span>Sign Up Newsletter</span>
+              <div class="newsletter-input-btn">
+                <input id="email-address-footer" name="email-address" placeholder="Enter your email here">
+                <button class="btn-style">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="cards-section">
+            <div class="card-block">
+              <img src="./assets/images/footer/card1.png" alt="card-1">
+            </div>
+            <div class="card-block">
+              <img src="./assets/images/footer/card2.png" alt="card-2">
+            </div>
+            <div class="card-block">
+              <img src="./assets/images/footer/card3.png" alt="card-3">
+            </div>
+            <div class="card-block">
+              <img src="./assets/images/footer/card4.png" alt="card-4">
+            </div>
+          </div>
+        </div>
+        <div class="block-copyright">
+          <p>© 2024 Villa Venezia. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+
+</body>
+</html>

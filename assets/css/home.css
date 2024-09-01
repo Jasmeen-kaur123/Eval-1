@@ -108,7 +108,7 @@ section.booking-wrapper {
 	font-weight: bold;
 }
 
-.home-content-section {
+section.home-content-section {
   display: flex;
   flex-direction: column;
   padding: 20px 50px;
@@ -140,13 +140,6 @@ section.booking-wrapper {
   text-align: center;
   font-size: 25px;
   line-height: 32px;
-}
-
-section.home-content-section {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 50px;
-  gap: 20px;
 }
 
 .feature-location {
@@ -433,37 +426,58 @@ section.home-content-section {
 
 @media  (max-width: 768px) {
   .banner-section{
-    height: 454px;
+    height: 375px;
     max-width: 100%;
+    background-size: cover;
   }
    
-  .booking-wrapper{
+  .booking-wrapper {
     padding-top: 80px;   
   }
 
-  .booking-section{
-    flex-direction: column;
-    width: 334px;
-  }
-  
-  .check-in.book-blocks{
-    font-size: 24px;
-    border: none;       
+  .booking-section {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: -175px;
   }
 
-  .check-out.book-blocks{
-    font-size: 24px;
-    border: none; 
+  p {
+    margin: 0;
   }
 
-  .form-section.book-blocks{
-    font-size: 24px;
-    border: none; 
-    padding-top: 15px;
+  .book-blocks {
+    padding: 10px;
+    min-height: 10px;
+  }
+
+  .booking-site.book-blocks {
+    display: none
   }
 
   .book-now.book-blocks{
     border: none;
+    gap: 5px;
+  }
+  
+  .check-in.book-blocks {
+    font-size: 20px;
+    border: none;        
+  }
+
+  .check-out.book-blocks{
+    font-size: 20px;
+    border: none; 
+  }
+
+  .form-section.book-blocks {
+    border: none; 
+    padding-top: 8px;
+    width: 100%;
+  }
+
+  .book-blocks .information {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .booking-site.book-blocks{
@@ -471,133 +485,58 @@ section.home-content-section {
     padding-top: 15px;
   }
 
-  .home-content-section{
-    max-width: 100%;
-  }
-
-  .feature-location{
-    flex-direction: column;
-  }
-  
-  .feature-location .location-pics{
-    flex-direction: column;
-    max-width: 100%;
-  }
-  
-  .feature-location .location-pics .room1 img{
-    max-width: 100%;
-  }
-
-  .feature-location .location-pics .room1 p{
-    font-size: 19px;
-  }
-  
-  .feature-location .location-pics .room2 img{
-    max-width: 100%;
-  }
-
-  .feature-location .location-pics .room2 p{
-    font-size: 18px;
-  }
-
-  .feature-location .location-pics .room3 img{
-    max-width: 100%;
-  }
-
-  .feature-location .location-pics .room3 p{
+  .booking-section .book-now p {
     font-size: 16px;
   }
 
-  .explore{
-    flex-direction: column;
+  section.home-content-section {
     padding: 20px;
-    max-width: 100%;
-
+    margin-top: 0;
+    gap: 10px;
   }
 
-  .explore .shoping{
-    max-width:233px;
+  .home-content-section .content-logo img {
+    width: 100px;
   }
 
-  .explore .shoping .shoping-info{
-    max-width: 100%;
-    font-size: 12px;
-  }
-  
-  .explore .shoping .shoping-info, .dining-info {
-    width: 177px;
-    height: 235px;
-    padding: 5px;
-    padding-right: 22px;
-  } 
-
-  .explore .shoping .shoping-info p{
-    font-size: 24px;
+  .home-content-section .content-title {
+    font-size: 20px;
   }
 
-  .explore .shoping .shoping-info .shoping-button{
-    font-size:12px;
+  .home-content-section .content-description {
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  .explore .dining{
-    max-width: 233px;
-    padding-top: 77px;
-     padding-bottom: 1px;
+  .feature-location{
+    margin-top: 0
   }
 
-  .explore .dining .dining-info{
-    max-width: 100%;
-    font-size: 12px;
-  }
-  
-  .explore .dining .shoping-info, .dining-info {
-    width: 177px;
-    height: 235px;
-    padding: 5px;
-    padding-right: 22px;
-  } 
-
-  .explore .dining .shoping-info p{
-    font-size: 24px;
+  .feature-location .feature-title {
+    font-size: 35px;
   }
 
-  .explore .dining .shoping-info .shoping-button{
-    font-size:12px;
-  }
-
-  .us-content{
-    padding-left: 32px;
+  .feature-location .location-pics{
     flex-direction: column;
+    gap: 15px;
   }
-
-  .us-content  .content1 h1{
-    font-size: 27px;
-  }
-
-  .us-content .content1 .about img {
-     width:31px;
-  }
-
-  .us-content .content1 .about .about-title .heading {
-    font-size: 23px;
-  }
-
-  .us-content .content1 .about .about-title{
-    font-size: 14px;
-  }
-
-  .us-content .view{
-    z-index: 0;
+  
+  .feature-location .location-pics .room1 img,
+  .feature-location .location-pics .room2 img,
+  .feature-location .location-pics .room3 img {
     max-width: 100%;
   }
 
-  .us-content .view img{
-    max-width: 100%;
-    height: 175px;
+  .feature-location .location-pics p{
+    font-size: 16px;
   }
 
-  .beach .hotel-view{
-    height: 247px;
+  .explore,
+  .us-content,
+  .beach,
+  .views,
+  .video-tour {
+    display: none;
   }
   
 }

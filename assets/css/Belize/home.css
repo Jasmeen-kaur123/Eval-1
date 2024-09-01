@@ -130,3 +130,64 @@
   font-size: 22px;
   padding-left: 20px;
 }
+
+@media (max-width: 768px){
+  .belize-image img{
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .Amentities {
+    max-width: 50%;
+    height: 171px;
+  }
+   
+  .Availability .Amentities h1 {
+    font-size: 12px;
+  }
+
+  .Availability .Amentities ul li {
+    font-size: 10px;
+    padding-bottom: 0px;
+  }
+
+  .booking {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+
+  .booking .book-direct .book  {
+    padding-left: 127px;
+    font-size: 21px;
+  }
+
+  .booking .book-direct .price {
+    padding-left: 135px;
+    font-size: 22px;
+  }
+
+  .booking .available{
+    font-size: 17px;
+  }
+   
+  .booking .prices .price{
+    font-size: 15px;
+  }
+  
+  .booking .information .adults,  
+  .booking .information .selection-adults,
+  .booking .information .kids,
+  .booking .information .selection-kids,
+  .booking .input .input-text .promotion  {
+    font-size: 18px;
+  }
+  
+  .booking .input .input-text .code{
+    padding:0px
+  }
+
+  .booking .book-now .button {
+    font-size:13px;
+  }
+}
