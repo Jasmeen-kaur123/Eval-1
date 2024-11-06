@@ -1,0 +1,98 @@
+/* Booking Management Section */
+.booking-management {
+  padding: 10px;
+  /* background-color: #f9f9f9;
+  border-top: 1px solid #ccc; */
+}
+
+.booking-management h2 {
+  text-align: center;
+  font-style: italic;
+  font-size:30px;
+  color:#ad0662;
+  margin-bottom: 20px;
+}
+
+#booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#booking-form label {
+  font-size: 25px;
+  color: #333;
+}
+
+#booking-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#booking-form button {
+  padding: 10px 20px;
+  background-color:#ad0662;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#booking-form button:hover {
+  background-color:#ad0662;
+}
+
+#booking-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.booking-item button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color:#ad0662;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.booking-item button:hover {
+  background-color: #ad0662;
+}
+
+.booking-item button:first-of-type {
+  background-color:green;
+}
+
+.booking-item button:first-of-type:hover {
+  background-color:green;
+}

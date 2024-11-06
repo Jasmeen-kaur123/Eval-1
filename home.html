@@ -4,50 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Venezia</title>
-    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/signup.css">
+    <script src="./assets/js/include.js" defer></script> 
+    <link rel="stylesheet" href="./assets/css/booking-management.css">
   </head>
   <body>
     <!-- Header section -->
-    <header class="site-header">
-      <div class="logo">
-        <a href="home.html">
-          <img class="desktop-logo" src="./assets/images/header/logo.png" alt="logo">
-
-          <img class="mobile-logo" src="./assets/images/header/logo-mobile.png" alt="logo" >
-        </a>        
-      </div>
-      <nav class="header-nav">
-        <ul>
-          <li>
-            <a href="suites.html">
-              <img class="nav-image" src="./assets/images/header/suites.svg" alt="suites"> Suites 
-            </a>
-          </li>
-          <li>
-            <a href="accolades.html">
-              <img class="nav-image" src="./assets/images/header/accolades.svg" alt="accolades"> Accolades 
-            </a>
-          </li>
-          <li>
-            <a href="location.html">
-              <img class="nav-image" src="./assets/images/header/location.svg" alt="location"> Location 
-            </a>
-          </li>
-          <li>
-            <a href="sign.html">
-              <img class="nav-image" src="./assets/images/header/Profile.png" alt="Sign in"> Sign in
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Header section -->
-
+      <div data-include="header.html"></div>
     <!-- Body section -->
     <section class="banner-section">
+      <div class="carousel">
+        <img id="carousel-image" src="./assets/images/home/banner.webp" alt="./assets">
+      </div>
     </section>
     
     <section class="booking-wrapper">
@@ -67,25 +35,25 @@
         <div class="form-section book-blocks">
           <form class="information">
             <div class="selects">
-              <label for="Adults" class="adults">Adults</label>
-              <select id="Adults" name="Adults" class="selection-adults">
-                <option value="Adults-1">1</option>
-                <option value="Adults-2" selected>2</option>
-                <option value="Adults-3">3</option>
-                <option value="Adults-4"> 4</option>
-                <option value="Adults-5">5</option>
-                <option value="Adults-6">6</option>
+              <label for="adults" class="adults">Adults</label>
+              <select id="adults" name="adults" class="selection-adults">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4"> 4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
               </select>
             </div>
 
             <div class="selects">
-              <label for="Kids" class="kids">Kids</label>
-              <select id="Kids" name="Kids" class="selection-kids">
-                <option value="Kids-0" selected>0</option>
-                <option value="Kids-1">1</option>
-                <option value="Kids-2">2</option>
-                <option value="Kids-3">3</option>
-                <option value="Kids-4">4</option>
+              <label for="kids" class="kids">Kids</label>
+              <select id="kids" name="kids" class="selection-kids">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
             </div>
           </form>
@@ -93,7 +61,7 @@
         <div class="book-now book-blocks">
           <p>Book Direct and Save</p>
           <p class="dollar">&dollar;106.22</p>
-          <button type="submit">BOOK NOW</button>
+          <button type="submit" onclick="bookRoom()">BOOK NOW</button>
         </div>
         <div class="booking-site book-blocks">
           <div class="ota">
@@ -124,6 +92,15 @@
         </div>
       </div>
     </section>
+    
+    <section class="show-booking hidden" id="show-booking-info">
+      <div>Check In: <span id="booking-checkin"></span></div>
+      <div>Check Out: <span id="booking-checkout"></span></div>
+      <div>Adult: <span id="booking-adult"></span></div>
+      <div>Kid: <span id="booking-kid"></span></div>
+      <div>Days: <span id="booking-days"></span></div>
+      <div>Total Cost: <span id="booking-cost"></span></div>
+    </section>
 
     <section class="home-content-section">
       <div class="content-logo">
@@ -134,7 +111,6 @@
       </div>
       <div class="content-description"> Enjoy the peace and serenity of our individually decorated apartments and immerse yourself in the serene and cozy atmosphere of our pool area, gardens and terraces. As you enter through the fountain-graced arbor into the secluded retreat at Villa Venezia, a feeling of calm and serenity and a sense of “no worries” will embrace you. </div>
     </section>
-
     <section class="feature-location">
       <div class="feature-title">
         <p>Our Suites</p>
@@ -142,23 +118,26 @@
       <a href="suites.html">
         <div class="location-pics">
           <div class="room1">
-            <img src="./assets/images/home/room1.jpg" width="450">
+            <img id="carousel-img" src="./assets/images/home/room1.jpg" width="450">            
             <p>French Country -1 Bedroom (V V 7)</p>
           </div>
           <div class="room2">
-            <img src="./assets/images/home/room2.jpg" width="450">
+            <img id="carousel-img2" src="./assets/images/home/room2.jpg" width="450">
             <p>French Country-Hotel Room (V V A)</p>
           </div>
+          
           <div class="room3">
-            <img src="./assets/images/home/room3.jpg" width="450" height="220">
+            <img id="carousel-img3" src="./assets/images/home/room3.jpg" width="450" height="220">
             <p>French Country 2 Bedroom (V V 7+ 7 A)</p>
           </div>
         </div>
+        
         </div>
-      </a>
-     
-    </section>
-    
+        
+      </a>     
+      <script src="image-carousel.js"></script>
+      </script> 
+     </section>         
     <section class="explore">
       <div class="shoping">
         <div class="shoping-info">
@@ -173,7 +152,6 @@
         </div>
       </div>
     </section>
-
     <section class="us-content">
       <div class="content1">
         <h1>
@@ -206,10 +184,8 @@
     </section>
     <section class="beach">
       <div class="hotel-view">
-
     </div>
-  </section>
-    
+  </section>    
     <section class="views">
       <div class="hotel-views">
         <div class="room-image">
@@ -234,8 +210,7 @@
           <img src="./assets/images/home/rating.svg" width="150">
         </div>        
     </div>
-    </section>
-    
+    </section>    
     <section class="video-tour">
        <div class="tour">
         Please Enjoy Our Virtual Tour
@@ -254,128 +229,13 @@
     
     </section>
 
-    <section class="signup">
-      <div class="offers">Sign up for special offers</div>
-      <div class="up-to-date">Stay up-to-date on the latest at our hotel</div>
-      <form class="input-text">
-        <div class="signup-form-inputs">
-          <input type="email" id="email" name="email" placeholder="Email-address*" class="code">
-          <input type="text" id="portal-code" name="portal-code" placeholder="Zip/Portal-code" class="code">        
-        </div>
-  
-        <div class="signup-button">
-          <button type="button" class="button">Submit</button>
-        </div>
-      </form>
-    </section>
-    
+    <div data-include="signup.html"></div>
     <!-- Body Section -->
     <!-- Footer Section -->
-    <footer class="site-footer">
-      <div class="footer-wrapper">
-        <div class="content-section">
-          <h2>Contact</h2>
-          <div class="contact-content">
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF1.png" alt="">
-              <div class="sub-content">
-                <span>Email </span>
-                <span>info@villa-venezia.com</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF2.png" alt="">
-              <div class="sub-content">
-                <span>Phone Number </span>
-                <span>(954) 832-0981</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/loc-footer.svg" alt="" class="address-icon" style="width:35px">
-              <div class="sub-content">
-                <span>Address </span>
-                <span>132 Isle of Venice, Fort Lauderdale, FL</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF3.png" alt="">
-              <div class="sub-content">
-                <span>Business Hours </span>
-                <span>09:00 am to 05:00 pm</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-section trips-login">
-          <h2>MyTrips</h2>
-          <div class="trips-content">
-            <img src="./assets/images/footer/login.svg" alt="">
-            <span>Login </span>
-          </div>
-          <div class="trips-content">
-            <img src="./assets/images/footer/edit.svg" alt="">
-            <span> Change / Cancel Reservation</span>
-          </div>
-        </div>
-        <div class="content-section policies-section">
-          <h2>Our Policies</h2>
-          <span>Hotel - Customer Policies</span>
-          <span>Site Use Poicies</span>
-          <span>Privacy and cookies</span>
-          <span>Terms and Conditions</span>
-          <span>Web Accessibility Statement</span>
-        </div>
-        <div class="content-section social-section">
-          <h2>Socials</h2>
-          <div class="social-content">
-            <img src="./assets/images/footer/google_white.png" alt="">
-            <span>Google Reviews </span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/twiiter-footer.png" alt="">
-            <span>Twitter</span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/insta.png" alt="">
-            <span>Instagram </span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/fb.png" alt="">
-            <span>Facebook</span>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-content">
-        <div class="newsletter-block">
-          <div class="form-section">
-            <form name="subscribeForm" class="subscribe-form" novalidate>
-              <span>Sign Up Newsletter</span>
-              <div class="newsletter-input-btn">
-                <input id="email-address-footer" name="email-address" placeholder="Enter your email here">
-                <button class="btn-style">Subscribe</button>
-              </div>
-            </form>
-          </div>
-          <div class="cards-section">
-            <div class="card-block">
-              <img src="./assets/images/footer/card1.png" alt="card-1">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card2.png" alt="card-2">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card3.png" alt="card-3">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card4.png" alt="card-4">
-            </div>
-          </div>
-        </div>
-        <div class="block-copyright">
-          <p>© 2024 Villa Venezia. All Right Reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <div data-include="footer.html"></div>
     <!-- Footer Section -->
   </body>
+
+  <script src="./assets/js/home.js"></script>
+  <script src="./assets/js/carousel.js"></script>
 </html>

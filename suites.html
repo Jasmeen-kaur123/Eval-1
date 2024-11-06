@@ -3,47 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/suites.css">
-  <link rel="stylesheet" href="./assets/css/signup.css">
+  <title>Document</title>  
+  <link rel="stylesheet" href="./assets/css/suites.css">  
+  <script src="./assets/js/include.js" defer></script> 
 </head>
 <body>
   <!-- header section -->
-  <header class="site-header">
-    <div class="logo">
-      <a href="home.html">
-        <img class="desktop-logo" src="./assets/images/header/logo.png" alt="logo">
-
-        <img class="mobile-logo" src="./assets/images/header/logo-mobile.png" alt="logo" >
-      </a>    
-    </div>
-    <nav class="header-nav">
-      <ul>
-        <li>
-          <a href="suites.html">
-            <img class="nav-image" src="./assets/images/header/suites.svg" alt="suites"> Suites
-           </a>
-        </li>
-        <li>
-          <a href="accolades.html">
-            <img class="nav-image" src="./assets/images/header/accolades.svg" alt="accolades"> Accolades 
-          </a>
-        </li>
-        <li>
-          <a href="location.html">
-            <img class="nav-image" src="./assets/images/header/location.svg" alt="location"> Location 
-          </a>
-        </li>
-        <li>
-          <a href="sign.html">
-            <img class="nav-image" src="./assets/images/header/Profile.png" alt="Sign in"> Sign in
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div data-include="header.html"></div>
   <!-- header section -->
   <!-- body section -->
 
@@ -56,7 +22,7 @@
       <img src="./assets/images/suites/room3.jpg" width="420" height="237">
     </div>
     <div class="room-4">
-      <img src="./assets/images/suites/room5.jpg"  width="483" height="491">
+      <img src="./assets/images/suites/room5.jpg"  width="534" height="491">
     </div>
   </section>
 
@@ -529,128 +495,11 @@
     </section>
   </div>
 
-  <section class="signup">
-    <div class="offers">Sign up for special offers</div>
-    <div class="up-to-date">Stay up-to-date on the latest at our hotel</div>
-    <form class="input-text">
-      <div class="signup-form-inputs">
-        <input type="email" id="email" name="email" placeholder="Email-address*" class="code">
-        <input type="text" id="portal-code" name="portal-code" placeholder="Zip/Portal-code" class="code">        
-      </div>
-
-      <div class="signup-button">
-        <button type="button" class="button">Submit</button>
-      </div>
-    </form>
-  </section>
+  <div data-include="signup.html"></div>
   <!-- body section -->
   
   <!-- Footer Section -->
-    <footer class="site-footer">
-      <div class="footer-wrapper">
-        <div class="content-section">
-          <h2>Contact</h2>
-          <div class="contact-content">
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF1.png" alt="">
-              <div class="sub-content">
-                <span>Email </span>
-                <span>info@villa-venezia.com</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF2.png" alt="">
-              <div class="sub-content">
-                <span>Phone Number </span>
-                <span>(954) 832-0981</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/loc-footer.svg" alt="" class="address-icon" style="width:35px">
-              <div class="sub-content">
-                <span>Address </span>
-                <span>132 Isle of Venice, Fort Lauderdale, FL</span>
-              </div>
-            </div>
-            <div class="footer-content-main">
-              <img src="./assets/images/footer/iconF3.png" alt="">
-              <div class="sub-content">
-                <span>Business Hours </span>
-                <span>09:00 am to 05:00 pm</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-section trips-login">
-          <h2>MyTrips</h2>
-          <div class="trips-content">
-            <img src="./assets/images/footer/login.svg" alt="">
-            <span>Login </span>
-          </div>
-          <div class="trips-content">
-            <img src="./assets/images/footer/edit.svg" alt="">
-            <span> Change / Cancel Reservation</span>
-          </div>
-        </div>
-        <div class="content-section policies-section">
-          <h2>Our Policies</h2>
-          <span>Hotel - Customer Policies</span>
-          <span>Site Use Poicies</span>
-          <span>Privacy and cookies</span>
-          <span>Terms and Conditions</span>
-          <span>Web Accessibility Statement</span>
-        </div>
-        <div class="content-section social-section">
-          <h2>Socials</h2>
-          <div class="social-content">
-            <img src="./assets/images/footer/google_white.png" alt="">
-            <span>Google Reviews </span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/twiiter-footer.png" alt="">
-            <span>Twitter</span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/insta.png" alt="">
-            <span>Instagram </span>
-          </div>
-          <div class="social-content">
-            <img src="./assets/images/footer/fb.png" alt="">
-            <span>Facebook</span>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-content">
-        <div class="newsletter-block">
-          <div class="form-section">
-            <form name="subscribeForm" class="subscribe-form" novalidate>
-              <span>Sign Up Newsletter</span>
-              <div class="newsletter-input-btn">
-                <input id="email-address-footer" name="email-address" placeholder="Enter your email here">
-                <button class="btn-style">Subscribe</button>
-              </div>
-            </form>
-          </div>
-          <div class="cards-section">
-            <div class="card-block">
-              <img src="./assets/images/footer/card1.png" alt="card-1">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card2.png" alt="card-2">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card3.png" alt="card-3">
-            </div>
-            <div class="card-block">
-              <img src="./assets/images/footer/card4.png" alt="card-4">
-            </div>
-          </div>
-        </div>
-        <div class="block-copyright">
-          <p>© 2024 Villa Venezia. All Right Reserved.</p>
-        </div>
-      </div>
-    </footer>
+  <div data-include="footer.html"></div>
   <!-- Footer Section -->
 </body>
 </html>

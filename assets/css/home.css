@@ -1,10 +1,21 @@
 .banner-section {
   height: 550px;
-  background-image: url("../images/home/banner.webp");
+  /* background-image: url("../images/home/banner.webp"); */
   background-position: bottom;
   position: relative;
   justify-content: center;
 }
+
+ .carousel {
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+} 
 
 section.booking-wrapper {
   display: flex;
@@ -19,7 +30,7 @@ section.booking-wrapper {
   text-align: center;
   align-items: center;
   background-color: white;
-  margin-top: -75px;
+  margin-top: -73px;
 	z-index: 1;
   border: 2px solid red;
   border-radius: 10px;
@@ -106,6 +117,31 @@ section.booking-wrapper {
 .price-part {
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.show-booking {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 4px solid red;
+  margin: auto;
+  width: 250px;
+  margin-top: 20px;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+section#show-booking-info div {
+  font-weight: bold;
+}
+
+section#show-booking-info div span {
+  font-weight: normal;
 }
 
 section.home-content-section {
